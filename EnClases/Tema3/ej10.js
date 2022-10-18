@@ -1,0 +1,26 @@
+let MiP =
+    {
+    "query": "185.99.248.133",
+    "status": "success",
+    "continent": "Europe",
+    "continentCode": "EU",
+    "country": "Spain",
+    "countryCode": "ES",
+    "region": "VC",
+    "regionName": "Valencia",
+    "city": "Elche",
+    "district": "",
+    "zip": "03203",
+    "lat": 38.2914,
+    "lon": -0.611276,
+    "timezone": "Europe/Madrid",
+    "offset": 7200,
+    "currency": "EUR",
+    "isp": "Aire Networks",
+    "org": "Aire Networks Del Mediterraneo SL Unipersonal",
+    "as": "AS29119 ServiHosting Networks S.L.",
+    "asname": "SERVIHOSTING-AS",
+    "mobile": false,
+    "proxy": false,
+    "hosting": true
+    }
