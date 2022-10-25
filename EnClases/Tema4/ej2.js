@@ -3,9 +3,9 @@
  * */
 
 
-function contletra(strign)
+function contletra(stringy)
 {
-    cadenaArray = Array.from(strign.toLowerCase());
+    cadenaArray = Array.from(stringy.toLowerCase());
     let numletra = cadenaArray.filter((caracter)=>(caracter >= 'a' && caracter <= 'z') || caracter == 'ñ').length;
     console.log(numletra);
 }
