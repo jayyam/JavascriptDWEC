@@ -6,8 +6,8 @@ let mifuncion = function ()
     return 'hola';
 }
 
-function matrioska()
+function matrioska(mifuncion)
 {
-    return mifuncion();
+    mifuncion();
 }
 matrioska(mifuncion());

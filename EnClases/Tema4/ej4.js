@@ -10,5 +10,5 @@ function conjunto(... strings)
     return peliculas;
 }
 
-console.log(conjunto('Palabras','ola','zapatos', 'Medicina', 'mano'));
+    console.log(conjunto('Indiana','saw','teminator', 'demolition man', 'manos'));
 

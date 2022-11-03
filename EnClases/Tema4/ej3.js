@@ -4,9 +4,9 @@
  *
  * */
 
-function esPositivo(num = 1)
+function isPositiv(num = 1)
 {
     if(!Number.isNaN(num)) return 'error';
     return num >= 0;
 }
-console.log(esPositivo(asdsadfre));
+console.log(isPositiv(asdsadfre));
