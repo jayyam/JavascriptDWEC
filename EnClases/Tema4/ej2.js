@@ -3,9 +3,14 @@
  * */
 
 
-function contletra(stringy)
+function contletra(cadena)
 {
-    cadenaArray = Array.from(stringy.toLowerCase());
-    let numletra = cadenaArray.filter((caracter)=>(caracter >= 'a' && caracter <= 'z') || caracter == 'ñ').length;
-    console.log(numletra);
+
+    cadenaArray = Array.from(cadena.toLowerCase());
+    let number = cadenaArray.filter((char)=>
+    {
+        (char >= 'a' && char <= 'z') || char == 'ñ'
+    }).length;
+    console.log(number);
 }
+contletra('asdsaSDwrthbhErafV');
