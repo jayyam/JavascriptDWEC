@@ -1,3 +1,10 @@
+/**
+ * Crea un documento html que tenga una tabla con 4 filas.
+ * Mediante JS modifica el estilo para que las filas pares tengan un fondo gris y las impares un fondo rosa.
+ * */
+
+
+
 let np = document.querySelector("#lista");
 
 let nh1 = document.createElement("li");
