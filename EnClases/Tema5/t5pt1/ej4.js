@@ -7,11 +7,11 @@
 let nodo = window.document.querySelector("div");
 
 let funccion = function () {
-    console.log("IZQUIERDA" + nodo.getBoundingClientRect().left);
-    console.log("DERECHA" + nodo.getBoundingClientRect().right);
-    console.log("ARRIBA" + nodo.getBoundingClientRect().top);
-    console.log("ABAJO" + nodo.getBoundingClientRect().bottom);
-    console.log("ALTO" + nodo.getBoundingClientRect().height);
-    console.log("ANCHO" + nodo.getBoundingClientRect().width);
+    console.log("IZQUIERDA " + nodo.getBoundingClientRect().left);
+    console.log("DERECHA " + nodo.getBoundingClientRect().right);
+    console.log("ARRIBA " + nodo.getBoundingClientRect().top);
+    console.log("ABAJO " + nodo.getBoundingClientRect().bottom);
+    console.log("ALTO " + nodo.getBoundingClientRect().height);
+    console.log("ANCHO " + nodo.getBoundingClientRect().width);
 }
 window.setInterval(funccion, 5000);

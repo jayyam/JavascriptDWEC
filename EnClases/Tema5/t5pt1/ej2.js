@@ -6,5 +6,5 @@ window.setInterval(function (){
      ${b}
      omardpana`
 
-    console.log(a)}, 500);
+    console.log(a)}, 5000);
 
