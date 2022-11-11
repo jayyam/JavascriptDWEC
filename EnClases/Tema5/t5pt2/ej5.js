@@ -9,6 +9,4 @@ window.addEventListener('DOMContentLoaded', (event) =>
     console.log('DOM cargado');
 });
 
-window.addEventListener('load', (event) => {
-    console.log('pagina cargada');
-});
+

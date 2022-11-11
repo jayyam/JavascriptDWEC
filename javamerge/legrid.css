@@ -12,39 +12,47 @@
 }
 div.itemA
 {
-
+    position_grid: relative;
     background-color: #ff001f;
-
+    padding: 100px;
 }
 div.itemB
 {
-
+    position_grid: relative;
     background-color: #006869;
-
+    padding: 100px;
 }
 div.itemC
 {
-
+    position_grid: relative;
     background-color: pink;
-
+    padding: 100px;
 }
 div.itemD
 {
-
+    position_grid: relative;
     background-color: #105100;
-
+    padding: 100px;
 }
 div.itemE
 {
-
+    position_grid: relative;
     background-color: yellow;
+    padding: 100px;
 
 }
 div.itemF
 {
-
+    position_grid: relative;
     background-color: brown;
-
+    padding: 100px;
+}
+div
+{
+    position_grid: relative;
+    padding_grid: 20px 0;
+    text-align_grid: center;
+    font-size_grid: 10px;
 }
 
 /*<button onclick="myFunction();">ton</button><p class="p1">Hacer tienda</p>*/

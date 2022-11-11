@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"><!-- viewport => https://htmlcheatsheet.com/css/-->
+  <title>FuturDOM</title>
+  <script defer src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+<body>
+<p id="texto">fsdfsdfdsf</p>
+<script>
+  document.querySelector('#texto').addEventListener('copy', (event) => {Swal.fire('evento sweet')
+  });
+</script>
+
+</body>
+</html>

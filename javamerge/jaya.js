@@ -1,6 +1,6 @@
 var tasks =
     [
-        { title: 'Hacer Nacho' },
+        { title: 'Hacer js' },
         { title: 'Hacer tienda' },
         { title: 'Hacer servidores' },
         { title: 'Hacer xml' },
