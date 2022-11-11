@@ -1,0 +1,65 @@
+.flex-container
+{
+    display: flex;
+    height: 450px;
+    flex-wrap: wrap;
+    align-content: space-around;
+
+}
+.flex-container > div {
+
+     line-height: 75px;
+ }
+div.itemA
+{
+    position: relative;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 3px;
+    background-color: #ff001f;
+}
+div.itemB
+{
+    position: relative;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 3px;
+    background-color: #006869;
+}
+div.itemC
+{
+    position: relative;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 3px;
+    background-color: pink;
+}
+div.itemD
+{
+    position: relative;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 3px;
+    background-color: #105100;
+}
+div.itemE
+{
+    position: relative;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 3px;
+    background-color: yellow;
+}
+div.itemF
+{
+    position: relative;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 3px;
+    background-color: brown;
+}
+
+/*<button onclick="myFunction();">ton</button><p class="p1">Hacer tienda</p>*/
+
+
+
