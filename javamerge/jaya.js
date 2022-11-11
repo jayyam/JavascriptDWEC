@@ -20,7 +20,7 @@ for (var i = 0; i < tasks.length; i += 1)//Iterando en la variable task que va a
     todoListElement.appendChild(divElement);//Diciendole que el li(elemento del arbol creado) tiene que estar dentro del ul
 }
 
-//setTimeout(function deFlecha()
-//{document.getElementById(li.textContent='Eliminando');
+    //setTimeout(function deFlecha()
+    //{document.getElementById(li.textContent='Eliminando');
    // todoListElement.removeChild(li);},2000)//timer que recibe una funcion anonima en y el tiempo en ms en el segundo parametro
 

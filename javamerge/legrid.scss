@@ -1,0 +1,26 @@
+/**.flex-container
+{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-around;
+    height: 450px;
+
+}
+.flex-container > div {
+
+     line-height: 75px;
+ }*/
+@import "legrid";
+
+div
+{
+  $position_grid: relative;
+  $padding_grid: 20px 0;
+  $text-align_grid: center;
+  $font-size_grid: 10px;
+}
+
+/*<button onclick="myFunction();">ton</button><p class="p1">Hacer tienda</p>*/
+
+
+
