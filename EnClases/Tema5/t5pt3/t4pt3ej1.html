@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>pt3ej1</title>
+    <script src="switch.js" defer></script>
+</head>
+<body>
+    <form onsubmit="return chequear(this)" action="formulario.php">
+        <label for="nombre">Nombre</label>
+        <input type="text" id="nombre" pattern="[A-ZÑ][a-zñ]*" required>
+        <br>
+        <br>
+        <label for="telefono">telefono</label>
+        <input type="tel" id="telefono" minlength="9" pattern="[0-9]{9,}"required>
+        <br>
+        <br>
+        <label for="edad">edad: </label>
+        <input type="text" id="edad" min="18" max="120" required>
+        <br>
+        <br>
+        <label for="casado">casado</label>
+        <input type="radio" value="true" name="casado" id="casado"  required>
+        <label for="soltero">soltero </label>
+        <input type="radio" value="false" name="casado" id="soltero"  required>
+        <br>
+        <br>
+        <label for="password">password</label>
+        <input type="password" id="password" pattern="(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])([a-zA-Z0-9]{8})"required>
+        <br>
+        <br>
+        <label for="pais">pais</label>
+        <select id="pais">
+            <option value="España">España</option>
+            <option value="Francia">Francia</option>
+            <option value="Alemania">Alemania</option>
+        </select>
+        <br>
+        <button type="submit">Enviar</button>
+    </form>
+
+<script>
+    function chequear(formulario)
+    {
+        console.log(formulario);
+        return false;
+    }
+</script>
+</body>
+</html>
