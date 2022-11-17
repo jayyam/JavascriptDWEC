@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>pt3ej1</title>
+    <!--<script src="switch.js" defer></script>-->
+</head>
+<body>
+<form id="formulario" action="formulario.php">
+
+    <style>
+        .errorNombre
+        {
+            color:red;
+            visibility: hidden;
+        }
+    </style>
+
+    <label for="nombre">nombre</label>
+    <input type="text" id="nombre" required pattern="[A-ZÑ][a-zñ]*" >
+    <span id="errorNombre" class="errorNombre"></span>
+    <br>
+    <br>
+    <label for="telefono">telefono</label>
+    <input type="tel" id="telefono" minlength="9"required pattern="[0-9]{9,}">
+    <br>
+    <br>
+    <label for="edad">edad: </label>
+    <input type="text" id="edad" min="18" max="120" required>
+    <br>
+    <br>
+    <label for="casado">casado</label>
+    <input type="radio"  name="casado" id="casado" value="true">
+    <label for="soltero">soltero </label>
+    <input type="radio" name="soltero" id="soltero" value="false">
+    <br>
+    <br>
+    <label for="password">password</label>
+    <input type="password" id="password" required pattern="(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])([a-zA-Z0-9]{8})">
+    <br>
+    <br>
+    <label for="pais">pais</label>
+    <select id="pais">
+        <option value="España">España</option>
+        <option value="Francia">Francia</option>
+        <option value="Alemania">Alemania</option>
+    </select>
+    <br>
+    <button type="submit" onclick="personalizar()">Enviar</button>
+</form>
+
+<script>
+    function personalizar()
+    {
+        const nombre =document.getElementById("nombre");
+        const errorNombre =document.getElementById("errorNombre");
+        if(!nombre.checkValidity())
+        {
+            console.log(nombre.validity);
+            if (nombre.validity.valueMissing)
+            {
+                errorNombre.innerHTML = "No puedes dejar el nombre vacio";
+                nombre.setCustomValidity("No puedes dejar el nombre vacio");
+                errorNombre.style.visibility ='visible';
+            }
+            else if (nombre.validity.patternMismatch)
+            {
+                errorNombre.innerHTML = "Nombre debe empezar en mayusculas";
+                nombre.setCustomValidity("Nombre debe empezar en mayusculas");
+                errorNombre.style.visibility ='visible';
+            }
+            else
+            {
+                errorNombre.innerHTML = "";
+                nombre.setCustomValidity("");
+            }
+        }
+        console.log(nombre.checkValidity(""));
+    }
+</script>
+</body>
+</html>

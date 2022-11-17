@@ -24,3 +24,10 @@ console.log(newstr);
 
 let newstr2 = str.replaceAll(/expresionRegular/, 'valor a sustituio');
 console.log(newstr2);
+
+//teoria
+
+//presiono boton tipo(submit)
+//valida el navegador en html
+//ejecuto codigo on submit
+//envio formulario

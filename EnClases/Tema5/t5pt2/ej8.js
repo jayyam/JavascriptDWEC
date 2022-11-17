@@ -28,12 +28,12 @@ console.log(fecha.test(texfecha));
 
 var texRegex;
 let DNI = /^\d{8}-{0,1}(?![^IÑOU])[A-Z]$/
-while (texRegex = DNI.exec(str) != null)
+while (texRegexp = DNI.exec(str) != null)
 {
     console.log(texRegex[0]);
 }
-
-
 let mydni = texDNI.match(DNI);
+
+//replace/replaceAll
 
 

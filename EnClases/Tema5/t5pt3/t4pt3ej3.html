@@ -6,8 +6,9 @@
     <!--<script src="switch.js" defer></script>-->
 </head>
 <body>
-<form id="formulario" onsubmit="return chequear(this)" action="formulario.php">
-    <label for="nombre">Nombre</label>
+<form id="formulario" action="formulario.php">
+
+    <label for="nombre">nombre</label>
     <input type="text" id="nombre" required pattern="[A-ZÑ][a-zñ]*" >
     <br>
     <br>
@@ -36,38 +37,30 @@
         <option value="Alemania">Alemania</option>
     </select>
     <br>
-    <button type="submit">Enviar</button>
+    <button type="submit" onclick="personalizar()">Enviar</button>
 </form>
 
 <script>
-    function chequear(formulario)
+    function personalizar()
     {
-        let pais = formulario.pais.value;
-        let telefono = formulario.pais.value;
-        switch (pais)
+        const nombre =document.getElementById("nombre");
+        if(!nombre.checkValidity())
         {
-            case 'espana'://expresion regular
-                let er = /^\+?34\s?\d{9}$/
-                res = er.test(telefono);
-                console.log('españaa');
-                if (res)
-                {
-                    return true
-                }
-                else
-                {
-                    alert('ESpaña empieza por 34')
-                }
-                break;
-            default:
-                console.log('OTRO')
-                break;
+            console.log(nombre.validity);
+            if (nombre.validity.valueMissing)
+            {
+                nombre.setCustomValidity("No puedes dejar el nombre vacio")
+            }
+            else if (nombre.validity.patternMismatch)
+            {
+                nombre.setCustomValidity("Nombre debe empezar en mayuscualas")
+            }
+            else
+            {
+                nombre.setCustomValidity();
+            }
         }
-        //console.log(document.getElementById("pais").value);
-        //console.log(formulario);
-        //console.log(document.getElementById("pais").value);
-        //console.log(formulario);
-        return false;
+        console.log(nombre.checkValidity(""));
     }
 </script>
 </body>
