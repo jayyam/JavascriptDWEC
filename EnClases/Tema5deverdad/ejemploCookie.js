@@ -49,3 +49,47 @@ let objeto =
 window.localStorage.setItem('objeto', JSON.stringify(objeto));
 
 let objeto2 = JSON.parse(localStorage.getItem('objeto'));
+//-------------------------------------------------------------------------------
+
+//GET - PEDIR RECURSOS - PARAMETROS EN URL
+
+fetch('https://jsonplaceholder.typicode.com/posts')
+    .then(response => response.json())
+    .then(json => console.log(json))
+
+//POST - CREAR RECURSOS - PARAMETROS EN EL CUERPO DE LA SOLICITUD
+
+fetch('https://jsonplaceholder.typicode.com/posts' , {
+    method: "POST",
+    body: JSON.stringify({
+        title: 'titulo de prueba',
+        bosy: '5fsdfsdas',
+        userId: '3'
+    }),
+    headers: {
+        'Content-type': 'application/json; charset=UTF-8'//tipo MIME de lo que le voy a enviar en el cuerpo: aplication/json
+    }
+})
+    .then(response => response.json())
+    .then(json => console.log(json))
+
+//DELETE - ELIMINAR
+
+fetch('https://jsonplaceholder.typicode.com/posts/1', {
+    method: 'DELETE',
+});
+
+//PUT - CREAR/MODIFICAR
+fetch('https://jsonplaceholder.typicode.com/posts' , {
+    method: "PUT",
+    body: JSON.stringify({
+        title: 'titulo de prueba',
+        bosy: '5fsdfsdas',
+        userId: '3'
+    }),
+    headers: {
+        'Content-type': 'application/json; charset=UTF-8'//tipo MIME de lo que le voy a enviar en el cuerpo: aplication/json
+    }
+})
+    .then(response => response.json())
+    .then(json => console.log(json))
