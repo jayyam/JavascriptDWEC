@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UT 4 - Ejercicios Parte 2 - 02</title>
+</head>
+
+<body>
+    <button data-color="pink">PINK !</button>
+    <button data-color="grey">GREY !</button>
+    <button data-color="purple">PURPLE !</button>
+    <button data-color="black">BLACK !</button>
+
+    <script>
+        function changeColor(e) {
+            document.body.style.backgroundColor = e.target.getAttribute('data-color');
+        }
+
+        document.querySelectorAll('button').forEach(boton => {
+            boton.addEventListener('click', changeColor);
+        });
+    </script>
+</body>
+
+</html>

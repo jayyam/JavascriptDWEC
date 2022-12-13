@@ -13,10 +13,11 @@ function mensaje3()
 {
     console.log('dentro');
 }
+
+document.querySelector("fuera").addEventListener("click", mensaje1,);
+document.querySelector("medio").addEventListener("click", mensaje2,);
+document.querySelector("dentro").addEventListener("click", mensaje3,);
+
 //event.target.innerText
 //document.querySelectorAll("div").forEach((element, indice) => let mifunc = window.mensaje1.addEventListener("click", mensaje1,);
 //stack overflow
-
- document.querySelector("fuera").addEventListener("click", mensaje1,);
-document.querySelector("medio").addEventListener("click", mensaje2,);
-document.querySelector("dentro").addEventListener("click", mensaje3,);

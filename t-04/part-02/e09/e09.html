@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UT 4 - Ejercicios Parte 2 - 09</title>
+</head>
+
+<body>
+
+    <script>
+        console.warn('DNI');
+        let regex = /^(\d){8}(-)?(?![IÑOU])([A-Z])$/;
+        let dni = '69660123Z';
+        console.log(dni, regex.test(dni.trim()));
+
+        console.warn('Número de cuenta');
+        let regex2 = /^([a-zA-Z]{2})\s*(\d{2})\s*(\d{4})\s*(\d{4})\s*(\d{2})\s*(\d{10})$/;
+        let iban = 'ES 24 3345 4333 23 1111112342';
+        console.log(iban, regex2.test(iban.trim()));
+
+        console.warn('Matrícula');
+        let regex3 = /^((\d){4})(\s?|-?)(?!.*[AEIOUQ])[B-Z]{3}$/;
+        let matricula = '6666-FWA';
+        console.log(matricula, regex3.test(matricula.trim()));
+
+        console.warn('Fecha DD/MM/AAAA');
+        let regex4 = /^([0][1-9]|[1-2]\d|3[01]){1}(\/){1}(0[1-9]|1[012]){1}(\/){1}([0-9]){2,4}$/;
+        let fecha = '23/06/1995';
+        console.log(fecha, regex4.test(fecha.trim()));
+    </script>
+</body>
+
+</html>

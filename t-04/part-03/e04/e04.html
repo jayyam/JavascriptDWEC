@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UT 4 - Ejercicios Parte 3 - 04</title>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+        crossorigin="anonymous"></script>
+    <!-- SweetAlert -->
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <style>
+        .error {
+            color: rgb(204, 0, 255);
+            border: 2px solid rgb(204, 0, 255);
+            font-weight: 600;
+            background-color: black;
+            padding: 8px;
+            border-radius: 8px;
+            display: none;
+            width: fit-content;
+            margin: 0 auto;
+            margin-bottom: 15px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="d-flex justify-content-center mt-5">
+        <form action="#">
+            <div class="card border-dark mb-3 bg-dark bg-gradient text-light" style="width: 43rem;">
+                <div class="card-header fw-bold text-center fs-3">Formulario JavaScript</div>
+                <div class="card-body bg-dark bg-gradient">
+
+                    <!-- NOMBRE -->
+                    <!-- Mensajes de error personalizados -->
+                    <span id="error" class="error"></span>
+                    <div class="input-group mb-3">
+                        <label for="nombre" class="input-group-text btn btn-outline-light">Nombre</label>
+                        <input type="text" id="nombre" name="nombre" class="form-control bg-dark text-light"
+                            pattern="[A-ZÑ][a-zñ]*" required>
+                    </div>
+
+                    <!-- TELEFONO -->
+                    <div class="input-group mb-3">
+                        <label for="phone" class="input-group-text btn btn-outline-light">Teléfono</label>
+                        <input type="tel" id="phone" name="phone" class="form-control bg-dark text-light" minlength="9"
+                            pattern="\d{9,}" required>
+                    </div>
+
+                    <!-- EDAD-->
+                    <div class="input-group mb-3">
+                        <label for="edad" class="input-group-text btn btn-outline-light">Edad</label>
+                        <input type="number" id="edad" name="edad" class="form-control bg-dark text-light" min="18"
+                            max="120" required>
+                    </div>
+
+                    <!-- RADIO INPUTS -->
+                    <div class="d-flex flex-row">
+                        <div class="input-group mb-3">
+                            <div class="input-group">
+                                <!-- SOLTERA -->
+                                <div class="input-group-text bg-dark">
+                                    <input id="soltera" class="form-check-input mt-0" type="radio" value="true"
+                                        name="married">
+                                </div>
+                                <label for="soltera" class="form-control rounded-end bg-dark text-light">Soltera y
+                                    entera 💋</label>
+                                <!-- CASADA -->
+                                <div class="input-group-text ms-5 rounded-start bg-dark">
+                                    <input id="casada" class="form-check-input mt-0" type="radio" value="false"
+                                        name="married">
+                                </div>
+                                <label for="casada" class="form-control bg-dark text-light">Casada con la muerte
+                                    🥀</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- PASSWORD -->
+                    <div class="input-group mb-3">
+                        <label for="password" class="input-group-text btn btn-outline-light">Contraseña</label>
+                        <input type="password" id="password" name="password" class="form-control bg-dark text-light"
+                            minlength="8" pattern="(?=.*\d)(?=.*\W+)(?=.*[A-Z])(?=.*[a-z]).*">
+                    </div>
+
+                    <!-- SELECT PAISES -->
+                    <div class="input-group mb-3">
+                        <select class="form-select bg-dark text-light" id="pais" name="pais">
+                            <option value="japan">Japón</option>
+                            <option value="spain">España</option>
+                            <option value="ger">Alemania</option>
+                            <option value="aus">Australia</option>
+                        </select>
+                        <label class="input-group-text btn btn-outline-light" for="pais">País</label>
+                    </div>
+                </div>
+
+                <!-- SUBMIT -->
+                <div class="card-footer d-flex justify-content-center">
+                    <button type="submit" onclick="customize()" class="btn btn-outline-light">Enviar</button>
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <script>
+        function customize() {
+            const nombre = document.getElementById('nombre');
+            const message = document.getElementById('error');
+
+            if (!nombre.checkValidity()) {
+                if (nombre.validity.valueMissing) {
+                    message.innerHTML = 'NO PUEDES DEJAR EL NOMBRE VACÍO ! :3';
+                    message.style.display = 'block';
+
+                    nombre.setCustomValidity('ERR💔R! No puedes dejar el nombre vacío');
+                } else if (nombre.validity.patternMismatch) {
+                    message.innerHTML = 'LA PRIMERA LETRA CON MAYUSCULA ! :3';
+                    message.style.display = 'block';
+
+                    nombre.setCustomValidity('ERR💔R! El nombre debe empezar por mayúscula');
+                } else {
+                    nombre.setCustomValidity('');
+                }
+            }
+        }
+    </script>
+</body>
+
+</html>

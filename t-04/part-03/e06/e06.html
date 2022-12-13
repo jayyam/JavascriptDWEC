@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UT 4 - Ejercicios Parte 3 - 06</title>
+</head>
+<body>
+    <script>
+        let text = 'ES12 1234 1234 12 1234567890';
+
+        let iban = /^([a-zA-Z]{2})\s*(\d{2})\s*(\d{4})\s*(\d{4})\s*(\d{2})\s*(\d{10})$/;
+        // regex para visa, mastercard, american express y discover
+        let card = /^(?:4[0-9]{12}(?:[0-9]{3})?|5[1-5][0-9]{14}|3[47][0-9]{13}|6(?:011|5[0-9][0-9])[0-9]{12})$/;
+
+        switch(true) {
+            case iban.test(text):
+                console.table(`${text}: Número de cuenta`);
+                break;
+            case card.test(text):
+                console.table(`${text}: Tarjeta de crédito`);
+                break;
+            default:
+                console.log('Dato no válido');
+                break;
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UT 4 - Ejercicios Parte 2 - 03</title>
+</head>
+
+<body>
+    <img id="image"
+        src="https://64.media.tumblr.com/38178720c9b5e3c724b3cc0315b54563/tumblr_pqe1yo6X941vywwpno1_500.gifv"
+        alt="gif-prpr">
+    <img onclick="mensaje()"
+        src="https://64.media.tumblr.com/8e32f1f7f1ed367481d957843ee786d9/f07cc1dfa50c74cb-6c/s250x400/064badfb155e58a2a5c8cee3d696e5f0e853ce05.gifv"
+        alt="rawr">
+
+    <script>
+        function mensaje() {
+            alert('Has hecho click sobre la imagen !');
+        }
+
+        //document.getElementById("image").addEventListner("click", mensaje);
+        let image = document.getElementById('image');
+        image.addEventListener('click', mensaje);
+    </script>
+</body>
+
+</html>

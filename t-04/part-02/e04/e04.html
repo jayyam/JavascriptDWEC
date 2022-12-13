@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UT 4 - Ejercicios Parte 2 - 04</title>
+</head>
+
+<body>
+    <div id="primero" style="background-color: black; width: 300px; height: 300px;">
+        <div id="segundo" style="background-color: rgb(61, 61, 61); width: 200px; height: 200px;">
+            <div id="tercero" style="background-color: rgb(175, 175, 175); width: 100px; height: 100px;"></div>
+        </div>
+    </div>
+
+    <!-- MODO 1 -->
+    <script>
+        function mostrarMensaje1() {
+            console.log('PRIMERO');
+        }
+        function mostrarMensaje2() {
+            console.log('SEGUNDO');
+        }
+        function mostrarMensaje3() {
+            console.log('TERCERO');
+        }
+
+        document.getElementById('primero').addEventListener('click', mostrarMensaje1, true);
+        document.getElementById('segundo').addEventListener('click', mostrarMensaje2, true);
+        document.getElementById('tercero').addEventListener('click', mostrarMensaje3, true);
+    </script>
+
+    <!-- MODO 2 -->
+    <script>
+        function mostrarMensaje1(e) {
+            console.log('primero');
+        }
+        function mostrarMensaje2(e) {
+            console.log('segundo');
+        }
+        function mostrarMensaje3(e) {
+            console.log('tercero');
+        }
+
+        document.querySelectorAll('div').forEach((element, key) => {
+            element.addEventListener('click', window['mostrarMensaje' + (key + 1)], true);
+        });
+    </script>
+</body>
+
+</html>

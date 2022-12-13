@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<style>
+    table, tr, th {
+        border-style: solid;
+    }
+</style>
+<table>
+    <tr>
+        <th>1</th>
+    </tr>
+    <tr>
+        <th>2</th>
+    </tr>
+    <tr>
+        <th>3</th>
+    </tr>
+    <tr>
+        <th>4</th>
+    </tr>
+</table>
+
+<script>
+    const color = document.getElementsByTagName("TH");
+
+    for(i = 0; i < color.length; i++) {
+        if(i%2 == 1) {
+            color[i].style.backgroundColor = "grey";
+        }
+        else {
+            color[i].style.backgroundColor = "pink";
+        }
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UT 4 - Ejercicios Parte 2 - 10</title>
+</head>
+
+<body>
+
+    <script>
+        let text = 'El DNI de Antonio es 43232333M. Alberto cambió de id al obtener su nacionalidad y ahora es 32232333-J. Por último, me gustaría tener el mismo DNI que mi padre que es 12212222L';
+        const regex = /(\d){8}(-)?(?![IÑOU])([A-Z])/g;
+        const found = text.match(regex);
+
+        console.table(found);
+
+        // Modo 2
+        // Encontrar coincidencia y grupos (útil para obtener o quitar sufijos o prefijos)
+        const regex2 = /([a-z]*)(ball)/g;
+        const str = 'basketball football baseball'
+
+        // Obtiene el resultado y los grupos
+        // Mientras encuentre ocurrencias ejecuta el bucle
+        let ocurrencia;
+        while ((ocurrencia = regex2.exec(str)) != null) {
+            console.table(ocurrencia);
+        }
+
+        // Modo 3
+        // Obtener sólo la letra del DNI
+        const regex3 = /(\d){8}(-)?(?![IÑOU])([A-Z])/g;
+        let resultado;
+        while ((resultado = regex3.exec(text)) != null) {
+            console.log(resultado[3]); // referencia al cuarto grupo de la regex
+        }
+    </script>
+</body>
+
+</html>

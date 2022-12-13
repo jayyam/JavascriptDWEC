@@ -5,13 +5,29 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"><!-- viewport => https://htmlcheatsheet.com/css/-->
   <title>FuturDOM</title>
-  <!--<script src="jaya.js"></script>-->
+  <!--<script src="ej2.js"></script>-->
 </head>
 
 <body>
-  <button id=" red" onclick="red();">rojo</button>
+  <button id="red" onclick="red;">rojo</button>
   <button id="blue" onclick="blue();">azul</button>
-  <button id=" green" onclick="green();">verde</button>
+  <button id="green" onclick="green();">verde</button>
   <button id="none" onclick="none();">ninguno</button>
 </body>
+
+<script>
+  var elemento = window.document.getElementById('red');
+  document.body.style.backgroundColor = 'red';
+
+  let elemento = window.document.getElementById('blue');
+  document.body.style.backgroundColor = 'blue';
+
+  let elemento = window.document.getElementById('green');
+  document.body.style.backgroundColor = 'green';
+
+  let elemento = window.document.getElementById('none');
+  document.body.style.backgroundColor = 'white';
+
+  addEventListener('click', )
+</script>
 </html>
