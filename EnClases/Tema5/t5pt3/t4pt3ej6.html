@@ -40,29 +40,42 @@
     </div>
 
 <script>
-    function crearCookie()
+    function crearCookie(clave, valor, segundos)
     {
-        console.log()
+        let valore =  encodeURIComponent(valor);
+        document.cookie= `${clave}=${valore} ";max-age=${segundos}`;
     }
     function borrarCookie()
     {
-        console.log()
+        document.cookie = `${clave}=;max-age=0`;
     }
     function insertarLS()
     {
-        console.log()
+        window.localStorage.setItem("numero", number);
+        window.localStorage.setItem('cadena', string);
+        window.localStorage.setItem("arreglo", array);
+        let jsonString = JSON.stringify(objeto);
+        window.localStorage.setItem("object2", jsonString);
     }
     function borrarLS()
     {
-        console.log()
+        window.localStorage.removeItem("numero");
+        window.localStorage.removeItem('cadena');
+        window.localStorage.removeItem("arreglo");
+        window.localStorage.removeItem("object");
     }
     function consultarCookie()
     {
-        console.log()
+        console.log(document.cookie);
     }
     function consultarLS()
     {
-        console.log()
+        window.localStorage.getItem("numero");
+        window.localStorage.getItem('cadena');
+        let array2 = localStorage.getItem("array").split(",");
+        console.log(array2);
+        let objetoBack = JSON.parse(localStorage.getItem("object2"));
+        console.log(objetoBack);
     }
 </script>
 

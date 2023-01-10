@@ -16,3 +16,14 @@ for (let key in objeto)
 {
     console.log(`La key es: ${key} y el valor es : ${objeto[key]}`);
 }
+
+let objeto = {
+    cad1 : 'cadenica1',
+    cad2 :'cadenosa2',
+    cad3 : 'cadeneta3'
+}
+
+for (let key of objeto)
+{
+    console.log(`La key es: ${key} y el valor es : ${objeto[key]}`);
+}

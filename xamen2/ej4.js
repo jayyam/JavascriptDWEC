@@ -6,6 +6,38 @@
  * si alguna película tiene una duración de más de 300 min.
  * */
 
+
+let pelis = [
+    {nombre: 'aldo', duracion :30},
+    {nombre: 'aldo', duracion: 30},
+    {nombre: 'aldo', duracion: 30}
+];
+
+function cimena(...pelis)
+{
+    for (let object of pelis)
+    {
+        let nombre = object.nombre;
+    }   let duracion = object.duracion;
+        let largas = pelis.some(function (duracion)
+        {
+            if (duracion >30)
+            {
+                console.log(nombre, duracion)
+            }
+        })
+}
+cimena(...pelis)
+
+
+
+
+
+
+
+
+
+
 let peliculas = [
     { nombre: "teminator", duracion: 350 },
     { nombre: "robocop", duracion: 450 },
