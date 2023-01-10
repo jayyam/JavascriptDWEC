@@ -17,3 +17,14 @@ function creArray(numero)
 console.log(creArray(22.65));
 
 
+function creArray2(numero)
+{
+    let arria = Array(4);
+    for (let i=0; i < arria.length; i++)
+    {
+        arria[i] = numero;
+    }
+    return [Math.trunc(arria[0]), Math.round(arria[1]),Math.ceil(arria[2]), Math.floor(arria[3])];
+}
+
+creArray2(2651.21)

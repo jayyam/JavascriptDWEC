@@ -7,6 +7,23 @@
  * La función A imprimirá por consola “El valor es true”, y la función B imprimirá por consola “El valor es false”.
  * */
 
+par1= true
+par2 =function A(){console.log('valor true')}
+par2 =function B(){console.log('valor false')}
+
+function recibo()
+{
+    let result = par1 ? par2 : par3
+    console.log(result());
+}
+recibo(par1);
+
+
+
+
+
+
+
 
 par1 = false;
 par2 = function A() {console.log("El valor es true")}

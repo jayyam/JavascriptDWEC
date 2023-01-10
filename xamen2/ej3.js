@@ -10,7 +10,7 @@
  * */
 
 
-let numero =5;
+let numero =8;
 let star = '*';
 let guion = '-';
 
@@ -30,3 +30,23 @@ function triangulo(numero)
     }
 }
 triangulo(numero);
+
+let numero = 8;
+let estre = 'x';
+let guen = 'y'
+
+function triandulada(numero)
+{
+    for (let i=0 ; i<=numero; i++)
+    {
+        if (i%2 == 0)
+        {
+            console.log(estre.repeat(i));
+        }
+        else
+        {
+            console.log(guen.repeat(i));
+        }
+    }
+}
+triandulada(numero)

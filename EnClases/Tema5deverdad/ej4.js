@@ -1,23 +1,33 @@
-let numero = 5;
-let cadena = 'esto es una cadena';
+let number = 5;
+let string = 'esto es una cadena';
 let array = [2, 'tres', 6.5];
 let objeto =
     {
-        Nombre : Juan,
-        Section : Juguetes,
-        Financiacion :true
+        Nombre : 'cosa',
+        Section : 5,
+        Existe :true
     };
 
+//Guarda valores
 
-let chips = document.cookie;
-let myarray = document.cookie.split("; ");
-let objetoCookies = {};
-myarray.forEach((cookie) =>
-{
-    let aux = cookie.split("=");
-    let clave = aux[0];
-    let valor = aux[1];
-    objetoCookies[clave] = decodeURI(valor);
-});
+window.localStorage.setItem("numero", number);
+window.localStorage.setItem('cadena', string);
+window.localStorage.setItem("arreglo", array);
+let jsonString = JSON.stringify(objeto);
+window.localStorage.setItem("object2", jsonString);
 
-console.log(objetoCookies);
+//Obteniendo valores
+
+window.localStorage.getItem("numero");
+window.localStorage.getItem('cadena');
+let array2 = localStorage.getItem("array").split(",");
+console.log(array2);
+let objetoBack = JSON.parse(localStorage.getItem("object2"));
+console.log(objetoBack);
+
+//Borrando valores
+
+window.localStorage.removeItem("numero");
+window.localStorage.removeItem('cadena');
+window.localStorage.removeItem("arreglo");
+window.localStorage.removeItem("object");
