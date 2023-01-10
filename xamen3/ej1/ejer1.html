@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<table>
+  <tr><td id="examenA"><span>azul</span></td><td>azul</td></tr>
+  <tr><td>verde</td><td>verde</td></tr>
+  <tr><td>azul</td><td>azul</td></tr>
+  <tr><td>verde</td><td id="examenB"><span>verde</span></td></tr>
+</table>
+<h2>Hola</h2>
+<table id="tabla2">
+  <tr id="primera2"><td>paco</td></tr>
+  <tr><td>pepe</td></tr>
+  <tr><td>paco</td></tr>
+  <tr id="ultima2"><td>pepe</td></tr>
+</table>
+<table id="tabla3">
+  <tr><td>paco</td></tr>
+  <tr><td>pepe</td></tr>
+  <tr><td>paco</td></tr>
+  <tr id="ultima3"><td>pepe</td></tr>
+</table>
+
+<script>
+  let filas = window.document.querySelector('tr');
+
+  filas.forEach((element, index) => {
+    if (index % 2 == 0) {
+      element.style.backgroundColor = 'blue';
+    } else {
+      element.style.backgroundColor = 'white';
+    }
+  });
+
+</script>
+
+</body>
+</html>

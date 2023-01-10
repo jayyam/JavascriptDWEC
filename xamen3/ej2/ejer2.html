@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>2 examen</title>
+    <script src="ejer2.js" defer></script>
+</head>
+<body>
+  <button id="boton1">Boton 1</button>
+  <button id="boton2">Boton 2</button>
+
+<script>
+    let funcsion = window.setInterval(function()
+    {
+        console.log(location.href);
+        console.log(navigator.userAgent);
+
+    }, 2000);
+
+    document.getElementById("boton1").addEventListener("click", funcsion);
+
+    let funcsion2 = document.body.style.backgroundColor = 'red';
+
+    document.getElementById("boton2").window.addEventListener("click", funcsion2);
+</script>
+</body>
+</html>
