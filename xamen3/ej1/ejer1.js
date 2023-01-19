@@ -1,4 +1,4 @@
-let div = window.document.querySelector('div');
+/**let div = window.document.querySelector('div');
 
 // BEFORE
 let newElementBefore = document.createElement('h1'); // crear elemento
@@ -16,26 +16,26 @@ newElementAfter.src = "https://64.media.tumblr.com/e37d346e22ac533b0c1ebadcb1553
 newElementAfter.alt = 'alt text';
 
 div.after(newElementAfter);
+*/
 
 
 
 
-
-let filas = window.document.querySelector('tr');
+let filas = window.document.querySelectorAll('tr');
 
 for (let i = 0; i < filas.length; i++) {
-    if (i % 2 != 0) {
-        filas[i].style.backgroundColor = 'blue';
+    if (i % 2 === 0) {
+        filas[i].style.backgroundColor = 'green';
     } else {
-        filas[i].style.backgroundColor = 'white';
+        filas[i].style.backgroundColor = 'blue';
     }
 }
 
 // FOREACH
 filas.forEach((element, index) => {
-    if (index % 2 == 0) {
-        element.style.backgroundColor = 'pink';
+    if (index % 2 === 0) {
+        element.style.backgroundColor = 'green';
     } else {
-        element.style.backgroundColor = 'grey';
+        element.style.backgroundColor = 'blue';
     }
 });

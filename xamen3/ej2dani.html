@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ejercicio 2</title>
+</head>
+
+<body>
+<button id="boton1">Botón 1</button>
+<button id="boton2">Botón 1</button>
+<script>
+  document.getElementById("boton1").onclick = function () {
+    console.log("Versión del navegador: " + navigator.appVersion);
+    console.log("URL: " + location.href);
+    setTimeout(function () {
+      location.href = "https://moodle.iescierva.net/";
+    }, 2000);
+  }
+
+  document.getElementById("boton1").ondblclick = function () {
+    document.body.style.backgroundColor = "red";
+  }
+  document.getElementById("boton2").addEventListener("dblclick", function () {
+    document.body.style.backgroundColor = "blue";
+  });
+  /**
+   * EJERCICIO 2: Comentario:
+   * Son dos botones... no uno
+   *
+   * Botón 1. Al hacer clic deberá mostrar por consola la versión del navegador y la URL,
+   * finalmente deberá redirigir pasados 2 segundos a la página https://www.filmaffinity.com/es/film483861.html
+   * Botón 2. Al hacer doble clic deberás cambiar el fondo del cuerpo del documento HTML.
+   * Resuélvelo con ondblclick y con addEventListener (ambas formas)
+   * */
+</script>
+</body>
+
+</html>

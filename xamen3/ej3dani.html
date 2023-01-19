@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ejercicio 3</title>
+</head>
+
+<body>
+<p>Allá muevan feroz guerra, ciegos reyes por un palmo más de tierra; que yo aquí tengo por mío cuanto abarca el mar
+  bravío, a quien nadie impuso leyes.</p>
+
+<script>
+  window.onload = function () {
+    var texto = document.getElementsByTagName("p")[0].innerHTML;
+    var expresion = /[\wáéíóú]+/g;
+    var palabras = texto.match(expresion);
+    var palabrasAcento = [];
+    for (var i = 0; i < palabras.length; i++) {
+      if (palabras[i].match(/[áéíóú]/)) {
+        palabrasAcento.push(palabras[i]);
+      }
+    }
+    console.log(palabrasAcento);
+    var textoSinTilde = texto.replace(/á/g, "a");
+    textoSinTilde = textoSinTilde.replace(/é/g, "e");
+    textoSinTilde = textoSinTilde.replace(/í/g, "i");
+    textoSinTilde = textoSinTilde.replace(/ó/g, "o");
+    textoSinTilde = textoSinTilde.replace(/ú/g, "u");
+    console.log(textoSinTilde);
+  }
+
+  /**
+   * EJERCICIO 2: Comentario:
+   * Son dos botones... no uno
+   *
+   * Botón 1. Al hacer clic deberá mostrar por consola la versión del navegador y la URL, finalmente deberá redirigir pasados 2 segundos a la página https://www.filmaffinity.com/es/film483861.html
+   * Botón 2. Al hacer doble clic deberás cambiar el fondo del cuerpo del documento HTML. Resuélvelo con ondblclick y con addEventListener (ambas formas)
+   * */
+</script>
+</body>
+
+</html>
