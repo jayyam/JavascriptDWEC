@@ -39,3 +39,61 @@ N
 EnClases/tema 6/ejemplomapo.js,5/9/5935c8a79f63b03bbdbd40bbae3235e26dd612df
 Y
 )EnClases/Tema5deverdad/pruebacookies.html,2/9/29b35188333a47603e61c695c7fc4fc596b27b0c
+M
+EnClases/Tema5deverdad/ej5.js,b/e/be9dad246729fd3018480de14476dc6d1eb174ba
+F
+EnClases/tema 6/ej2.js,0/7/070b27295a8b83150ac8711876a1a52e195a98ea
+F
+EnClases/tema 6/ej1.js,9/d/9d98f9e73ca4e13031c305441ef6555277b2743e
+S
+#EnClases/Tema5deverdad/botones.html,c/d/cd32dc255f6914c4d5f64491a91a0897f3c17e1a
+F
+EnClases/tema 6/ej4.js,1/2/127da966a4412c6cb291bd235d97f6133c2c0141
+F
+EnClases/tema 6/ej6.js,2/2/223e75aa6dee02bbc8c518b7d36e643a972b9081
+W
+'EnClases/Tema5deverdad/ejemploCookie.js,a/d/ad52816c89918fd85df238dacbe65383242bbc42
+F
+EnClases/tema 6/ej5.js,0/b/0b1a1f0a2bbe9f696186f63fbce87da1f7363421
+F
+EnClases/tema 6/ej3.js,3/7/379e6e9249f61a1183ed2e9fdab73d4930adc4dc
+Z
+*EnClases/tema 6/repaso-set-map-promesas.js,9/d/9d43fc1579af3fc11afc7187e9430a1ced7aecb4
+N
+baal/t-04/part-03/e05/e05.html,8/8/88b9c2cf451682872e7b069e0f5dfb5a7bdc596f
+L
+baal/t-04/part-01/e02/e02.js,e/c/ec534f69ace5fc38befa527986821c1a700d9577
+L
+baal/t-04/part-01/e03/e03.js,2/3/233483125f4ddafcf9f425faed981821817b40d3
+N
+baal/t-04/part-01/e04/e04.html,4/0/402831d19aab9d54c855647fbd304a13e2c4ab66
+L
+baal/t-04/part-01/e01/e01.js,f/2/f223ae4bc32447d414c1621beb3d1c1bee827a32
+L
+baal/t-04/part-01/e04/e04.js,4/4/440fc73e435c0e4c822ba87dd292fdca84453d50
+L
+baal/t-04/part-01/e05/e05.js,b/b/bb83ff1fc478e97dc47215979b4ae62d4f42d0b2
+N
+baal/t-04/part-01/e06/e06.html,d/3/d316e0298f904bf198987dc863e122de10863c0e
+L
+baal/t-04/part-01/e06/e06.js,4/1/414405b4011c5a1fd8c5fcd5012f3e0e65cd8538
+L
+baal/t-04/part-01/e07/e07.js,c/6/c69f4d5e7f94830275e76effb1297d9d5f44bc75
+L
+baal/t-04/part-01/e08/e08.js,c/4/c458fb6f760b040df42539fba93cffe202ca8769
+L
+baal/t-04/part-01/e09/e09.js,a/0/a05c37a45430bdca41a5ca7f3489d81ca0cdb59e
+L
+baal/t-04/part-01/e10/e10.js,c/1/c1af5cb3c4011e7392d439e153c454539c370cc9
+N
+baal/t-04/part-03/e06/e06.html,3/9/39915cf58c52aa8b684b755730f83803b35ae1a2
+N
+baal/t-04/part-03/e04/e04.html,c/9/c99b2a1dc79267c1c55e02645a146d42cf3b3845
+N
+baal/t-04/part-02/e01/e01.html,c/4/c434535498069fe01693f5d2a1177f2ca5c5739d
+N
+baal/t-04/part-02/e02/e02.html,6/6/660b707c0ed276f2dd8a3750cb3154ce53f05cf2
+N
+baal/t-04/part-02/e03/e03.html,d/7/d7eb47a9da26c17a303261f89ac6a975c5958a0a
+N
+baal/t-04/part-02/e05/e05.html,8/5/85ec9fbc7e7173e54e41d5495bf33a77423e934a

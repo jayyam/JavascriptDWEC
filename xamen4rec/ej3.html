@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ej3</title>
+</head>
+<body>
+
+<p>
+    Texto de Prueba:
+
+    Allá muevan feroz guerra, ciegos Reyes por un palmo más de tierra; que yo aquí tengo por mío cuanto abarca el mar Bravío, a quien nadie impuso Leyes.
+</p>
+
+<script>
+        let textoPrueba = document.getElementsByTagName("p")[0].innerHTML;
+        let regexAcentos = /[\wáéíóú]+/g;
+        let regexMayusculas = /[A-ZÑ]+/g;
+
+        let palabras1 = textoPrueba.match(regexAcentos);
+        let palabras2 = textoPrueba.match(regexMayusculas);
+
+        let palabrasAcento = [];
+        let palabrasMayusculas = [];
+        for (let i = 0; i < palabras1.length; i++) {
+            if (palabras1[i].match(regexAcentos)) {
+                palabrasAcento.push(palabrasAcento[i]);
+            }
+            else if (palabras2[i].match(regexMayusculas)) {
+                palabrasAcento.push(palabrasMayusculas[i]);
+            }
+        }
+
+        let textoNoAcentos = textoPrueba.replace(/á/g, "a");
+        textoNoAcentos = textoNoAcentos.replace(/é/g, "e");
+        textoNoAcentos = textoNoAcentos.replace(/í/g, "i");
+        textoNoAcentos = textoNoAcentos.replace(/ó/g, "o");
+        textoNoAcentos = textoNoAcentos.replace(/ú/g, "u");
+
+        console.log(textoNoAcentos);
+        console.log(palabrasMayusculas);
+
+
+</script>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Examen4</title>
+</head>
+<body>
+<form id="formulario" onsubmit="return chequear(this)" action="#">
+
+  <label for="dinero1">dinero</label>
+  <input type="text" id="dinero1" minlength="9" required pattern="[0-9]{10,}">
+
+  <br>
+  <br>
+
+  <label for="dinero2">Mas dinero</label>
+  <input type="text" id="dinero2" minlength="9" required pattern="[0-9]{10,}">
+
+  <br>
+  <br>
+
+  <button type="submit">Enviar</button>
+
+  <script>
+    function customize() {
+      /**
+       * checkValidity()
+       * función predefinida en los campos input que devuelve true o false en base a si se cumplen o no las restricciones del codigo html
+       */
+      const nombre = document.getElementById('nombre');
+      if (!nombre.checkValidity()) {
+        if (nombre.validity.valueMissing) { // si no es valido porque esta vacio
+          nombre.setCustomValidity('ERRoR! No puedes dejar el nombre vacío');
+        } else if (nombre.validity.patternMismatch) { // si no es valido porque no coincide con la regex
+          nombre.setCustomValidity('ERRoR! El nombre debe empezar por mayúscula');
+        } else {
+          // Si no se pone el else se personalizan todos los mensajes de error
+          nombre.setCustomValidity('');
+        }
+      }
+
+  </script>
+</form>
+</body>
+</html>
