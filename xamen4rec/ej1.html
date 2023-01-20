@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ej1</title>
+</head>
+<body>
+<table id="tabla1">
+    <tr>
+        <th id="examenA"><span>Nombre</span></th>
+        <th>Apellidos</th>
+    </tr>
+    <tr>
+        <td>Juan</td>
+        <td>Sánchez</td>
+    </tr>
+    <tr>
+        <td>Alberto</td>
+        <td>Fernández</td>
+    </tr>
+    <tr>
+        <td>Lucia</td>
+        <td id="examenB"><span>García</span></td>
+    </tr>
+</table>
+
+<h2>Hola</h2>
+
+<table id="tabla2" style="background-color: yellowgreen">
+    <tr id="primera2">
+        <td>primera fila</td>
+    </tr>
+    <tr id ="segunda2">
+        <td>segunda fila</td>
+    </tr>
+    <tr id ="tercera2">
+        <td>tercera fila</td>
+    </tr>
+    <tr id="ultima2">
+        <td>cuarta fila</td>
+    </tr>
+
+    <table id="tabla3">
+        <tr>
+            <td>paco</td>
+        </tr>
+        <tr>
+            <td>pepe</td>
+        </tr>
+        <tr>
+            <td>paco</td>
+        </tr>
+        <tr id="ultima3">
+            <td>pepe</td>
+        </tr>
+    </table>
+
+</table>
+
+<script>
+    let tables = window.document.getElementsByTagName('table');
+
+    let table1 = tables[0];
+    let filas1 = table1.querySelectorAll('td');
+    let newTd = document.createElement('td');
+            insert1 = filas2[2].newTd;
+            insert2 = filas2[3].newTd;
+
+
+
+    let table2 =  tables[1];
+    let filas2 = table2.querySelectorAll('td');
+    for (let i = 0; i < filas2.length; i++) {
+        if (i % 2 === 0) {
+            filas2[i].style.border= '3px solid black';
+        }
+    }
+
+
+    let table3 =  tables[2];
+    let filas3 = table3.querySelectorAll('td');
+    for (let i = 0; i < filas3.length; i++) {
+        if (i % 2 === 0) {
+            //filas3[i].;
+        }
+    }
+
+
+</script>
+
+</body>
+</html>
+
+let primero = document.getElementById('primero');
+let ultimo = document.getElementById('tercero');
+primero.before(ultimo);
+
+let div = document.querySelector('div');
+
+div.before.innerText = 'content';
+
+let newElementAfter = document.createElement('td');
+
+newElementAfter.src = "URI/URL";
+div.after(newElementAfter);
