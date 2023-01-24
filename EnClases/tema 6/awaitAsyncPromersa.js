@@ -32,3 +32,6 @@ async function llamarAPI()
 
 let hola = llamarAPI();
 console.log(hola);
+
+/-------/
+

@@ -41,22 +41,10 @@ Y
 )EnClases/Tema5deverdad/pruebacookies.html,2/9/29b35188333a47603e61c695c7fc4fc596b27b0c
 M
 EnClases/Tema5deverdad/ej5.js,b/e/be9dad246729fd3018480de14476dc6d1eb174ba
-F
-EnClases/tema 6/ej2.js,0/7/070b27295a8b83150ac8711876a1a52e195a98ea
-F
-EnClases/tema 6/ej1.js,9/d/9d98f9e73ca4e13031c305441ef6555277b2743e
 S
 #EnClases/Tema5deverdad/botones.html,c/d/cd32dc255f6914c4d5f64491a91a0897f3c17e1a
-F
-EnClases/tema 6/ej4.js,1/2/127da966a4412c6cb291bd235d97f6133c2c0141
-F
-EnClases/tema 6/ej6.js,2/2/223e75aa6dee02bbc8c518b7d36e643a972b9081
 W
 'EnClases/Tema5deverdad/ejemploCookie.js,a/d/ad52816c89918fd85df238dacbe65383242bbc42
-F
-EnClases/tema 6/ej5.js,0/b/0b1a1f0a2bbe9f696186f63fbce87da1f7363421
-F
-EnClases/tema 6/ej3.js,3/7/379e6e9249f61a1183ed2e9fdab73d4930adc4dc
 Z
 *EnClases/tema 6/repaso-set-map-promesas.js,9/d/9d43fc1579af3fc11afc7187e9430a1ced7aecb4
 N
@@ -97,3 +85,55 @@ N
 baal/t-04/part-02/e03/e03.html,d/7/d7eb47a9da26c17a303261f89ac6a975c5958a0a
 N
 baal/t-04/part-02/e05/e05.html,8/5/85ec9fbc7e7173e54e41d5495bf33a77423e934a
+w
+G.idea/sonarlint/issuestore/4/0/402831d19aab9d54c855647fbd304a13e2c4ab66,4/0/40ba5d7bb359b019ab0697c0098e970f3ce79960
+w
+G.idea/sonarlint/issuestore/c/4/c434535498069fe01693f5d2a1177f2ca5c5739d,c/6/c667aeafd5980d24ad294e50c1e25de5ba8e7211
+w
+G.idea/sonarlint/issuestore/f/2/f223ae4bc32447d414c1621beb3d1c1bee827a32,c/b/cbc800d07dfa9cd09b57cdb9881314572eb6cfc6
+w
+G.idea/sonarlint/issuestore/b/b/bb83ff1fc478e97dc47215979b4ae62d4f42d0b2,9/9/9953d84a8d8c5490df27250564b7bcf7c741ff11
+w
+G.idea/sonarlint/issuestore/8/5/85ec9fbc7e7173e54e41d5495bf33a77423e934a,e/0/e0a49dbf2124c00b0fb13b2a2760caf87d9f32d7
+w
+G.idea/sonarlint/issuestore/2/3/233483125f4ddafcf9f425faed981821817b40d3,8/4/8418f9aea3424dafa60eb7d6d442ebf8ada69339
+w
+G.idea/sonarlint/issuestore/4/4/440fc73e435c0e4c822ba87dd292fdca84453d50,c/b/cba50202af341271985180c593c265def8308310
+w
+G.idea/sonarlint/issuestore/c/4/c458fb6f760b040df42539fba93cffe202ca8769,b/6/b6b2c774f428181176405e199abf2b401271c742
+w
+G.idea/sonarlint/issuestore/8/8/88b9c2cf451682872e7b069e0f5dfb5a7bdc596f,a/5/a56407915a6db8e530a3efde15b9e9b41181c9bf
+w
+G.idea/sonarlint/issuestore/e/c/ec534f69ace5fc38befa527986821c1a700d9577,5/9/599bfa0bc7ca5a7e186b53e5a7c76d5fdfcc5cce
+w
+G.idea/sonarlint/issuestore/a/0/a05c37a45430bdca41a5ca7f3489d81ca0cdb59e,b/f/bf1bb92042483761038d7dd2ea9327c520bbd191
+w
+G.idea/sonarlint/issuestore/c/9/c99b2a1dc79267c1c55e02645a146d42cf3b3845,3/c/3c3063ebfefd8a99a7ca9f8c438604377deb3a56
+w
+G.idea/sonarlint/issuestore/3/9/39915cf58c52aa8b684b755730f83803b35ae1a2,2/6/2655b6b706d41d91756af4f1f6b7400496081354
+w
+G.idea/sonarlint/issuestore/c/1/c1af5cb3c4011e7392d439e153c454539c370cc9,6/f/6f091a8eb4e5643c4fe4e14c41beb815842570f3
+w
+G.idea/sonarlint/issuestore/c/6/c69f4d5e7f94830275e76effb1297d9d5f44bc75,8/7/875a3f79cabc589fa92457630372790756330676
+w
+G.idea/sonarlint/issuestore/d/3/d316e0298f904bf198987dc863e122de10863c0e,7/1/71bab5ce66f3d6164b7a8fde6e9728aa441e846e
+w
+G.idea/sonarlint/issuestore/d/7/d7eb47a9da26c17a303261f89ac6a975c5958a0a,a/9/a97289034809c70c4fa19025ac9a99de8a297c22
+w
+G.idea/sonarlint/issuestore/6/6/660b707c0ed276f2dd8a3750cb3154ce53f05cf2,f/6/f6ee3bd89bc0584af56b7a6aa2de65c2e42f6997
+w
+G.idea/sonarlint/issuestore/4/1/414405b4011c5a1fd8c5fcd5012f3e0e65cd8538,0/8/087b357ff2fcfc916c0ab054cb43bad47b9467cf
+B
+xamen4rec/ej1.html,7/2/72830a516650c81da7cedf34e92982dd5a3468d9
+B
+xamen4rec/ej2.html,1/1/11e2356cceffe26bed8f5f6fef2e4758d14126c0
+B
+xamen4rec/ej3.html,b/2/b22ecd39108646d9d3500e356d5b03250882164c
+B
+xamen4rec/ej4.html,5/7/57dde48ab009a0276c8cd6745857124824bd20b5
+Q
+!EnClases/tema 6/ejemploPromesa.js,9/e/9ee8621715fa24029e98436cc785c5387d48c6c7
+R
+"EnClases/Tema5/t5pt3/t4pt3ej6.html,7/0/70dce3c7df02f7bf3b87acb734f63d2ae6b7310f
+N
+baal/t-04/part-02/e04/e04.html,5/4/54aa083c1fbb96ce77c61f73ab3af60398025e65

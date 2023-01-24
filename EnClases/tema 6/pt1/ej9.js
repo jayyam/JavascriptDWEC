@@ -1,6 +1,6 @@
 /**anagrama*/
 
-let anagram = ["OMAR", 'MORA'];
+let anagram = ['OMAR', 'MORA', 'ROMA', 'RAMO', 'AMOR', 'PAN', 'NAP',];
 
 function aclean(arr)
 {
