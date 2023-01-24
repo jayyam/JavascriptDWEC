@@ -41,22 +41,8 @@ Y
 )EnClases/Tema5deverdad/pruebacookies.html,2/9/29b35188333a47603e61c695c7fc4fc596b27b0c
 M
 EnClases/Tema5deverdad/ej5.js,b/e/be9dad246729fd3018480de14476dc6d1eb174ba
-F
-EnClases/tema 6/ej2.js,0/7/070b27295a8b83150ac8711876a1a52e195a98ea
-F
-EnClases/tema 6/ej1.js,9/d/9d98f9e73ca4e13031c305441ef6555277b2743e
-S
-#EnClases/Tema5deverdad/botones.html,c/d/cd32dc255f6914c4d5f64491a91a0897f3c17e1a
-F
-EnClases/tema 6/ej4.js,1/2/127da966a4412c6cb291bd235d97f6133c2c0141
-F
-EnClases/tema 6/ej6.js,2/2/223e75aa6dee02bbc8c518b7d36e643a972b9081
 W
 'EnClases/Tema5deverdad/ejemploCookie.js,a/d/ad52816c89918fd85df238dacbe65383242bbc42
-F
-EnClases/tema 6/ej5.js,0/b/0b1a1f0a2bbe9f696186f63fbce87da1f7363421
-F
-EnClases/tema 6/ej3.js,3/7/379e6e9249f61a1183ed2e9fdab73d4930adc4dc
 Z
 *EnClases/tema 6/repaso-set-map-promesas.js,9/d/9d43fc1579af3fc11afc7187e9430a1ced7aecb4
 N
@@ -97,3 +83,33 @@ N
 baal/t-04/part-02/e03/e03.html,d/7/d7eb47a9da26c17a303261f89ac6a975c5958a0a
 N
 baal/t-04/part-02/e05/e05.html,8/5/85ec9fbc7e7173e54e41d5495bf33a77423e934a
+O
+EnClases/tema 6/pt2/fichero.csv,e/a/ea83808fd9495411463400b8bbd07fa4fc366029
+U
+%EnClases/tema 6/awaitAsyncPromersa.js,c/8/c82766f7cbfd62efef73c167bf09c2bbc8f551be
+J
+EnClases/tema 6/pt1/ej1.js,5/a/5adc22d7560d4056643c4696ae1720601f5e0bb2
+J
+EnClases/tema 6/pt1/ej2.js,9/0/909393c49836d0c3f0e6a1732425e9e532bcd6eb
+J
+EnClases/tema 6/pt1/ej3.js,9/d/9d991a9ec3beed1bf927dd6756f2f08c41468332
+J
+EnClases/tema 6/pt1/ej4.js,c/c/ccc0ee057b02b21b27c0bd34aa9a95a6b7dc1b9f
+J
+EnClases/tema 6/pt1/ej5.js,6/7/6784a5747b619080cd54a74a0d6e8bc17287dc2c
+L
+EnClases/tema 6/pt2/ej6.html,a/4/a4e6c1a9d242ffc86a116cf54814ad93f5186119
+J
+EnClases/tema 6/pt1/ej6.js,1/7/177d3db0794ce97acd191588f2c1e75174234ad4
+L
+EnClases/tema 6/pt2/ej7.html,1/0/109ef022bc9f2445dcfd0c2c57a41c2a683b38a5
+J
+EnClases/tema 6/pt1/ej7.js,0/4/0428762b867be4fe6c875d5a902c3f8d7cfcd1d6
+M
+EnClases/Tema5deverdad/ej8.js,0/f/0f256e67da50e5479fcc1c181f7a47ac54faf9cf
+J
+EnClases/tema 6/pt1/ej8.js,3/d/3d2b027e1ff509aa31ddb82aac79d155c74a4cf5
+J
+EnClases/tema 6/pt1/ej9.js,c/8/c82fe0b1a6be8e65bfff959c4079f829215f0702
+I
+EnClases/tema 6/ver6.html,2/c/2ca97e13e4506726589c753e95db5a926a8564d2

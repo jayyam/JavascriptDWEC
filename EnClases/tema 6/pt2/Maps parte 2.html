@@ -1,0 +1,144 @@
+EJERCICIOS MAPS PARTE 2
+--------------------------------------------------------------------------------------------------------------
+Ejercicio 1
+--------------------------------------------------------------------------------------------------------------
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <input type="file" id="file-input" />
+    <h3>Contenido del archivo:</h3>
+    <pre id="contenido-archivo"></pre>
+    <script defer>
+        async function leerArchivo(e) {
+            var archivo = e.target.files[0];
+            if (!archivo) {
+                return;
+            }
+            var lector = new FileReader();
+            lector.onload = function (e) {
+                console.log('dentro');
+                var contenido = e.target.result;
+                mostrarContenido(contenido);
+            };
+            console.log('antes');
+            lector.readAsText(archivo);
+            console.log('despues')
+        }
+
+        function mostrarContenido(contenido) {
+            var elemento = document.getElementById('contenido-archivo');
+            elemento.innerHTML = contenido;
+        }
+
+        async function wrapper(e) {
+            await leerArchivo(e);
+        }
+
+        document.getElementById('file-input').addEventListener('change', wrapper, false);
+
+
+    </script>
+</body>
+
+</html>
+
+
+--------------------------------------------------------------------------------------------------------------
+Ejercicio 2
+--------------------------------------------------------------------------------------------------------------
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script defer>
+
+        console.log('hola1');
+
+        fetch('https://jsonplaceholder.typicode.com/posts/1')
+            .then(response => { return response.json() })
+            .then(json => { console.log(json) })
+            .catch(error => { console.log("ha habido un error") })
+            .finally(() => { console.log('prueba') })
+            ;
+
+
+        console.log('hola2');
+
+    </script>
+</body>
+
+</html>
+
+
+--------------------------------------------------------------------------------------------------------------
+Ejercicio 3
+--------------------------------------------------------------------------------------------------------------
+
+try {
+let map = new Map();
+map.set('name', 'algo');
+let keys = map.keys();
+keys.push('more');
+console.log(keys);
+} catch (e) {
+console.log('a -> ' + e);
+}
+console.log('prueba');
+
+
+--------------------------------------------------------------------------------------------------------------
+Ejercicio 4
+--------------------------------------------------------------------------------------------------------------
+
+
+<!DOCTYPE html>
+<html lang="eng">
+
+<body>
+
+    <h2>JavaScript Callbacks</h2>
+
+    <p id="demo"></p>
+
+    <script>
+        function myDisplayer(some) {
+            document.getElementById("demo").innerHTML = some;
+        }
+
+        function getFile(myCallback) {
+            let req = new XMLHttpRequest();
+            req.onload = function () {
+                if (req.status === 200) {
+                    myCallback(this.responseText);
+                } else {
+                    myCallback("Error: " + req.status);
+                }
+            }
+            req.open('GET', "mycar.html");
+            req.send();
+        }
+
+        getFile(myDisplayer);
+    </script>
+
+</body>
+
+</html>
