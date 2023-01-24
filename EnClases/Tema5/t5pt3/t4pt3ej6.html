@@ -43,7 +43,7 @@
     function crearCookie(clave, valor, segundos)
     {
         let valore =  encodeURIComponent(valor);
-        document.cookie= `${clave}=${valore}`;
+        document.cookie= `${clave}=${valore} ";max-age=${segundos}`;
     }
     function borrarCookie()
     {

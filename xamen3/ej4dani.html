@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ejercicio 4</title>
+</head>
+
+<body>
+
+<form action="ej4dani.html" method="post">
+
+  <label for="nombre">Introduce tu nombre: </label>
+  <input type="text" name="nombre" id="nombre" required pattern="[A-Z]{4,}"
+         title="Introduce un nombre con mayúsculas y mínimo 4 caracteres">
+  <br>
+  <br>
+  <label for="apellidos">Introduce tus apellidos: </label>
+  <input type="text" name="apellidos" id="apellidos" required pattern="[A-Z]{4,}"
+         title="Introduce al menos un apellido en mayúsculas y mínimo 4 caracteres">
+  <input type="submit" value="Enviar">
+
+  <script>
+
+    window.onload = function () {
+      var nombre = document.getElementById("nombre");
+      var apellidos = document.getElementById("apellidos");
+      nombre.addEventListener("invalid", miFuncion);
+      function miFuncion() {
+        nombre.setCustomValidity("Este campo es inválido, no cumple con el patrón");
+      }
+      if (nombre.value === apellidos.value) {
+        nombre.setCustomValidity("Estos campos no pueden ser iguales");
+      }
+    }
+/**
+ * EJERCICIO 4: Comentario:
+ *
+ * Campo de tipo texto requerido de tamaño mínimo 4 y con el patrón para que todas las letras sean mayúsculas (usa pattern).
+ *
+ * Personaliza el texto que muestra el navegador para que si no cumple el patrón de la expresión regular
+ * le muestre el mensaje “Este campo es no cumple con el patrón” (usa validity)
+
+ * Crea otro campo de tipo texto igual que el del apartado a). Evita que se envíe
+ * el formulario si el texto introducido en este campo y en el del apartado a son iguales.
+ * */
+  </script>
+
+</form>
+
+</body>
+
+</html>

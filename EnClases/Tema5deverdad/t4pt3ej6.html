@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>pt3ej1</title>
+    <!--<script src="switch.js" defer></script>-->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js" integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk" crossorigin="anonymous"></script>
+</head>
+
+
+
+</head>
+<body>
+    <div class="container">
+        <div class="row mb-3">
+            <div class="col">
+                <button onclick="crearCookie" id="crear" type="button" class="btn btn-primary">Crear Cookie</button>
+            </div>
+            <div class="col">
+                <button onclick="borrarCookie" id="borrar" type="button" class="btn btn-primary">Borrar cookie</button>
+            </div>
+            <div class="col">
+                <button onclick="insertarLS" id="crearLS" type="button" class="btn btn-primary">Insertar LS</button>
+            </div>
+            <div class="col">
+                <button onclick="borrarLS" id="borrarLS" type="button" class="btn btn-primary">Borrar Ls</button>
+            </div>
+            <div class="col">
+                <button onclick="consultarCookie" id="verCookie" type="button" class="btn btn-primary">Consultar Cookie</button>
+            </div>
+            <div class="col">
+                <button onclick="consultarLS" id="verLS" type="button" class="btn btn-primary">Consultar LS</button>
+            </div>
+            </div>
+        </div>
+
+<script>
+
+    document.getElementById("crear").addEventListener("click", crearCookie)
+    function crearCookie()
+    {
+        document.cookie=`nombre=Omar`;
+    }
+    document.getElementById("borrar").addEventListener("click", borrarCookie)
+    function borrarCookie()
+    {
+        document.cookie = `nombre=Omar;max-age=0`;
+    }
+    document.getElementById("crearLS").addEventListener("click", insertarLS)
+    function insertarLS()
+    {
+        window.localStorage.setItem("numero", "doscientos");
+    }
+    document.getElementById("borrarLS").addEventListener("click", borrarLS)
+    function borrarLS()
+    {
+        window.localStorage.removeItem("numero");
+    }
+    document.getElementById("verCookie").addEventListener("click", consultarCookie)
+    function consultarCookie()
+    {
+        alert(document.cookie);
+    }
+    document.getElementById("verLS").addEventListener("click", consultarLS)
+    function consultarLS()
+    {
+        alert(window.localStorage.getItem("numero"));
+    }
+</script>
+
+</body>
+</html>
