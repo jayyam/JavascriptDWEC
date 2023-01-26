@@ -35,3 +35,5 @@ console.log(mySet.size);
 mySet.delete(3)
 console.log(mySet.size);
 mySet.add(4);
+
+/*examen**/

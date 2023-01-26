@@ -14,3 +14,5 @@ miMap.forEach((clave, valor) => {
 });
 
 let objeto2 = Object.fromEntries(miMap.entries());
+
+/* examen**/

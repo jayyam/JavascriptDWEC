@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+<input type="file" id="file-input" />
+<h3>Contenido del archivo:</h3>
+<pre id="contenido-archivo"></pre>
+<script defer>
+  async function leerArchivo(e) {
+    var archivo = e.target.files[0];
+    if (!archivo) {
+      return;
+    }
+    var lector = new FileReader();
+    lector.onload = function (e) {
+      console.log('dentro');
+      var contenido = e.target.result;
+      mostrarContenido(contenido);
+    };
+    console.log('antes');
+    lector.readAsText(archivo);
+    console.log('despues')
+  }
+
+  function mostrarContenido(contenido) {
+    var elemento = document.getElementById('contenido-archivo');
+    elemento.innerHTML = contenido;
+  }
+
+  async function wrapper(e) {
+    await leerArchivo(e);
+  }
+
+  document.getElementById('file-input').addEventListener('change', wrapper, false);
+
+
+</script>
+</body>
+
+</html>

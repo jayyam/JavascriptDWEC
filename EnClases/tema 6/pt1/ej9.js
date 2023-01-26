@@ -1,6 +1,6 @@
 /**anagrama*/
 
-let anagram = ['OMAR', 'MORA', 'ROMA', 'RAMO', 'AMOR', 'PAN', 'NAP',];
+/*let anagram = ['OMAR', 'MORA', 'ROMA', 'RAMO', 'AMOR', 'PAN', 'NAP',];
 
 function aclean(arr)
 {
@@ -14,6 +14,18 @@ function aclean(arr)
         if ()
     })
 }
+*/
+function array(arr) {
+    let map = new Map();
+    for (let word of arr) {
+        let palabra = word.toLowerCase().split('').sort().join('');
+        map.set(palabra, word);
+    }
+    return Array.from(map.values());
+}
+console.log(
+    array(['OMAR', 'MORA', 'ROMA', 'RAMO', 'AMOR', 'PAN', 'NAP',])
+);
 
 
 

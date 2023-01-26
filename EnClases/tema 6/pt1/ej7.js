@@ -11,4 +11,6 @@ let DesArray2 = ['uno', 'cuatro', 'dos', 'cinco', 'dos', 'tres', 'siete', 'seis'
 let correcto =DesArray2.filter((valor, indice) => { return DesArray2.indexOf((valor) === indice)});
 console.log(correcto.sort);
 
+/*examen*/
+
 
