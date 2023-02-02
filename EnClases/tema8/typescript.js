@@ -1,7 +1,8 @@
 /*comandos
 
    tsc -init
-*  tsc nombre del archi.ts para que compi,le
+  tsc nombre del archivo.ts para que compile desde la carpeta
+
 *
 *
 * */
