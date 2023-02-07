@@ -30,7 +30,6 @@ class Persona6 {
     {
         return this.nombre +" "+ this.apellidos;
     }
-
 }
 class Empleado extends Persona6 {
     #sueldo;
@@ -63,9 +62,6 @@ class Empleado extends Persona6 {
     {
         return super.showFullName +"Cuartos"+ this.#sueldo;
     }
-
 }
-
-
 let miEmpleado = new Empleado('Alfonso', 'Santana', 1200);
 console.log(miEmpleado.showFullName());

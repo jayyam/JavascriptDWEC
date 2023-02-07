@@ -21,12 +21,10 @@ class Coche {
     {
         this._modelo = modelo;
     }
-
     toString()
     {
         return this.marca +" "+ this.modelo;
     }
-
 }
 class Quad extends Coche {
     _cilindrada;
@@ -44,12 +42,18 @@ class Quad extends Coche {
     {
         return this._cilindrada;
     }
+    toString()
+    {
+        return this.cilindrada;
+    }
     mostrarDetalles()
     {
         return super.toString() +"Con cilindrada "+ this._cilindrada;
     }
-
 }
 
-let miQuad = new Quad('Hommer', 'Simpsons', 1200);
+let miQuad = new Quad('Hummer', 'Simpsons', 1200);
 console.log(miQuad.mostrarDetalles());
+
+let miQuad2 = new Quad('Drummer', 'Flinstone', 4600);
+console.log(miQuad2.mostrarDetalles());

@@ -57,7 +57,9 @@ prueba3 = 'OMar';//aqui funciona
 
 /-----/
 
-let myArray2: [number, string, null | boolean] = [2, 'garcia', true];// han de estar en secuencia con la declaracion
+let myArray2: [number, string, null | boolean] = [2, 'garcia', null];//mutable
+let myArray3: Readonly<[string, boolean, number]> = ["santana", true, 2001];//inmutable
+// han de estar en secuencia con la declaracion
 
 /-----/
 
@@ -164,3 +166,53 @@ class Persona {
 }
 let persona: Persona = new Persona('Omar', 'Garcia', 'Santana');
 console.log(persona.showFullName());
+
+class PilaEnteros {
+    private vec: number[] = [];
+
+    insertar(x: number) {
+        this.vec.push(x);
+    }
+    extraer () {
+        if (this.vec.length > 0){
+            return this.vec.pop;
+        }
+        else return null;
+    }
+}
+
+let pilaEnteros = new PilaEnteros();
+pilaEnteros.insertar(3);
+pilaEnteros.extraer(2);
+let extraidoEnteros: number = pilaEnteros.extraer();
+ class PilaStrings {
+     private vec: string[] = [];
+
+     insertar(x: string) {
+         this.vec.push(x);
+     }
+
+     extraer() {
+         if (this.vec.length > 0) {
+             return this.vec.pop;
+         } else return null;
+     }
+ }
+
+let pilaString = new PilaStrings();
+pilaEnteros.insertar('adsafsda');
+pilaEnteros.extraer('adsafsda');
+let extraidoString: string = pilaString.extraer();
+  class PilaGenerica<T> {
+      private vec: T[] = [];
+
+      insertar(x: T) {
+          this.vec.push(x);
+      }
+
+      extraer() {
+          if (this.vec.length > 0) {
+              return this.vec.pop;
+          } else return null;
+      }
+  }
