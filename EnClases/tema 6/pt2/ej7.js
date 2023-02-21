@@ -18,8 +18,7 @@ async function request() {
             }
             catch (error)
             {
-
+                return error;
             }
-
 }
 document.getElementById('boton').addEventListener('click', request);

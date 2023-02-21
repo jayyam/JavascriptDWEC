@@ -17,5 +17,4 @@ async function wrapper (e)
 {
     await leerArchivo(e);
 }
-
 document.getElementById('file-Input').addEventListener(wrapper('change', wrapper, false));

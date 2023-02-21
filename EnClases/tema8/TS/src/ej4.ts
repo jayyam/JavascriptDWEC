@@ -19,5 +19,11 @@ abstract class Persona {
 
 class Empleado extends Persona {
 
-
+    getDepartamento(): string {
+        return 'prueba';
+    }
 }
+
+let persona: Empleado = new Empleado('aaa', 'bbb', 'ccc');
+console.log(persona.showFullName());
+console.log(persona.getDepartamento());
