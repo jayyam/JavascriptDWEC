@@ -30,8 +30,6 @@ G.idea/sonarlint/issuestore/2/c/2c578f84a5e8897d87e70bfbccb93e400309342f,8/6/86
 w
 G.idea/sonarlint/issuestore/0/b/0bb664f525a6b801867fdbb58acde3506a3801f5,3/a/3a99df939dccead01c993b4c7701e2ff36902922
 w
-G.idea/sonarlint/issuestore/0/f/0f256e67da50e5479fcc1c181f7a47ac54faf9cf,9/6/9690b5b318ef6fadd40e82c9d3d7f9749cb74786
-w
 G.idea/sonarlint/issuestore/6/e/6ef24572d941bf660e75a6c2f070487cc2a052cd,e/4/e4b6120b6708e810980b68f671e4db8bfb8876e5
 J
 EnClases/tema 6/ejemplo.js,a/0/a01c14538bf752df1aff48077fe6c139a0bb2c11
@@ -101,15 +99,59 @@ L
 EnClases/tema 6/pt2/ej6.html,a/4/a4e6c1a9d242ffc86a116cf54814ad93f5186119
 J
 EnClases/tema 6/pt1/ej6.js,1/7/177d3db0794ce97acd191588f2c1e75174234ad4
-L
-EnClases/tema 6/pt2/ej7.html,1/0/109ef022bc9f2445dcfd0c2c57a41c2a683b38a5
 J
 EnClases/tema 6/pt1/ej7.js,0/4/0428762b867be4fe6c875d5a902c3f8d7cfcd1d6
 M
 EnClases/Tema5deverdad/ej8.js,0/f/0f256e67da50e5479fcc1c181f7a47ac54faf9cf
 J
 EnClases/tema 6/pt1/ej8.js,3/d/3d2b027e1ff509aa31ddb82aac79d155c74a4cf5
+E
+EnClases/tema7/ej2.js,0/1/0158e624f07a482be6a5a81d4148dde0932f396f
+E
+EnClases/tema7/ej3.js,b/6/b66c241c587644a2568175a6ca9a636a0bd00aab
+J
+EnClases/tema 6/pt2/ej5.js,1/d/1d759a24ef39dddf193f6ca72a57ee0db15b1271
+U
+%EnClases/tema 6/pt2/Maps parte 2.html,7/4/74ca10bd23e9ea77c139ff0d316b02d7b0659b25
+J
+EnClases/tema 6/pt2/ej7.js,d/e/deaab6e0e1c423387de2aaac75bdfe08af8f57ab
 J
 EnClases/tema 6/pt1/ej9.js,c/8/c82fe0b1a6be8e65bfff959c4079f829215f0702
+E
+EnClases/tema7/ej6.js,6/3/639a3b5ed4f0d4d997bb1fe60b2a60bcc7d11d77
+L
+EnClases/tema 6/pt2/ej5.html,1/9/1909d3ca4b828adfa77bb885a7135c39df718652
+L
+EnClases/tema 6/pt2/ej7.html,1/0/109ef022bc9f2445dcfd0c2c57a41c2a683b38a5
+L
+EnClases/tema 6/pt2/ej4.html,9/a/9ac445e7602e93ea73e1e32003032511d9706196
+J
+EnClases/tema 6/pt2/ej6.js,5/d/5d4219060bc1931b78acc5ca06a2b2e61de0214f
+L
+EnClases/tema 6/pt2/ej1.html,e/b/eb720b5dd5f7bba86f14ce35f9a3bc633c88a519
+E
+EnClases/tema7/ej4.js,6/e/6e40e33f3c51f923e5c6a416aa6d48dfbe01b7c3
+X
+(EnClases/tema8/TS/typescriptmostrar.html,1/5/15e25c88316d851738ad4c0177def71d4627d9a2
+L
+EnClases/tema8/typescript.js,a/c/acca8e2a64028c2e92b92cf7a55a0fb3cba9da07
+O
+EnClases/tema8/TS/tsconfig.json,a/4/a49fd1004b4b54ef8a56ca350316604d25665ffe
+O
+EnClases/Javascript/prueba.html,8/e/8ea87ea84b8d527e901a1b0452f45f6b15aa56c6
+P
+ EnClases/tema8/TS/scripts/ej3.js,2/5/25deb8c083e75bd9a6a6def0717e74b14a9c55dd
+Q
+!EnClases/tema8/TS/scripts/main.js,0/b/0bf4345863f5365fa5387aa30818cdc2b12750d1
+L
+EnClases/tema8/TS/fonts.html,9/2/9258e179384bf5e04bdb03f6fb8d7beb91669497
+E
+EnClases/tema7/ej1.js,9/e/9e6af4469220c20eaa9c8490208f02bd83aa88d1
+N
+EnClases/tema7/ut7Mostrar.html,3/b/3bffdeea47c3c5e78f6a7244e46da423433d53ac
 I
 EnClases/tema 6/ver6.html,2/c/2ca97e13e4506726589c753e95db5a926a8564d2
+E
+EnClases/tema7/ej5.js,f/9/f9fc7f5c298e7845de83ce0271a16b273eda4c1a
+R
+"EnClases/tema7/clasesJavascript.js,a/2/a2c60a4d3875b25fc262c2daf11adbb8e87ba95f

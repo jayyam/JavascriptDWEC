@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MichatGPT</title>
+    <script src="index.js" defer></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+
+    <button onclick="showParameters()">Mostrar/Ocultar Parámetros</button>
+    <form>
+        <table class="table ocultar" id="parametros">
+            <thead>
+                <tr>
+                    <th scope="col">Parámetro</th>
+                    <th scope="col">Valor</th>
+                    <th scope="col">Descripción</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><label for="model">model</label></td>
+                    <td><input type="text" name="model" id="model" value="text-davinci-003"></td>
+                    <td><i>Este parámetro se refiere al modelo de lenguaje natural que se utilizará para generar la
+                            respuesta. Los modelos de lenguaje natural se entrenan en grandes conjuntos de datos de
+                            texto para aprender patrones y estructuras del lenguaje. El modelo que se utiliza debe ser
+                            específico para la tarea que se está abordando, por ejemplo, responder preguntas o generar
+                            texto creativo.</i></td>
+                </tr>
+                <tr>
+                    <td><label for="temperature">temperature</label></td>
+                    <td><input type="number" name="temperature" id="temperature" value="0.9"></td>
+                    <td><i>Este parámetro controla el grado de aleatoriedad en la generación de respuestas. Un valor
+                            alto de temperatura produce respuestas más variadas y creativas, pero también puede generar
+                            respuestas menos coherentes. Un valor bajo de temperatura genera respuestas más predecibles
+                            y coherentes, pero también más limitadas.</i></td>
+                </tr>
+                <tr>
+                    <td><label for="max_tokens">max_tokens</label></td>
+                    <td><input type="number" name="max_tokens" id="max_tokens" value="2000"></td>
+                    <td><i>Este parámetro establece el número máximo de palabras que el modelo puede generar en una
+                            respuesta. Si se establece un valor bajo, la respuesta será más corta y puede ser más
+                            relevante. Si se establece un valor alto, la respuesta puede ser más detallada, pero también
+                            puede ser menos precisa. (Valor máximo 2048)</i></td>
+                </tr>
+                <tr>
+                    <td><label for="top_p">top_p</label></td>
+                    <td><input type="number" name="top_p" id="top_p" value="1"></td>
+                    <td><i>Este parámetro controla la cantidad de opciones que el modelo considera al generar la
+                            respuesta. El modelo generará una lista de posibles palabras para cada posición en el texto,
+                            y luego seleccionará las palabras con la probabilidad acumulada más alta que sumen el valor
+                            establecido en top_p.</i></td>
+                </tr>
+                <tr>
+                    <td><label for="frequency_penalty">frequency_penalty</label></td>
+                    <td><input type="number" name="frequency_penalty" id="frequency_penalty" value="0"></td>
+                    <td><i>Este parámetro penaliza las palabras que el modelo ha generado con una frecuencia más alta en
+                            el conjunto de datos de entrenamiento. La idea es que el modelo genere palabras más
+                            creativas y menos comunes al penalizar las palabras que usa con más frecuencia.</i></td>
+                </tr>
+                <tr>
+                    <td><label for="presence_penalty">presence_penalty</label></td>
+                    <td><input type="number" name="presence_penalty" id="presence_penalty" value="0.6"></td>
+                    <td><i>Este parámetro penaliza las palabras que el modelo ya ha generado en la respuesta. La idea es
+                            que el modelo genere respuestas más variadas y evite repetir las mismas palabras o
+                            frases.</i></td>
+                </tr>
+                <tr>
+                    <td><label for="n">n</label></td>
+                    <td><input type="number" name="n" id="n" value="1"></td>
+                    <td><i>El número de respuestas que se generarán para la entrada proporcionada.</i></td>
+                </tr>
+                <tr>
+                    <td><label for="stop">stop</label></td>
+                    <td><input type="text" name="stop" id="stop" value="stop"></td>
+                    <td><i>Una lista de palabras o frases que se utilizarán para detener la generación de la respuesta.
+                            Esto puede ser útil para limitar la longitud de la respuesta o para evitar que el modelo
+                            genere información irrelevante.</i></td>
+                </tr>
+            </tbody>
+        </table>
+        <input type="text" name="Pregunta" id="pregunta">
+        <button type="button" onclick="enviarPregunta()" id="boton">ENVIAR PREGUNTA</button>
+    </form>
+    <div id="pensando"></div>
+    <div id="respuesta"></div>
+</body>
+
+</html>
